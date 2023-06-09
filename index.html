@@ -16,15 +16,8 @@
         <div class="mt-5" id="contenido">
             <img src="" width="100px" alt="" class="img-fluid rounded-circle">
         </div>
-        <div class="mt-5 " id="contenido2">
-          <img src="" width="100px" alt="" class="img-fluid rounded-circle">
-        </div>
-        <div class="mt-5 " id="contenido3">
-        <img src="" width="100px" alt="" class="img-fluid rounded-circle">
-        <hr>
-        </div>
+        
     </div>
-</div>
 
     <script>
         var contenido = document.querySelector('#contenido')
@@ -38,10 +31,7 @@
               contenido.innerHTML = `
             <img src="${data.results['0'].picture.large}" width="100px" alt="" class="img-fluid rounded-circle">
             <p>Nombre: ${data.results['0'].name.last}</p>
-            <img src="${data.results['0'].picture.large}" width="100px" alt="" class="img-fluid rounded-circle">
-            <p>Nombre: ${data.results['0'].name.last}</p>
-            <img src="${data.results['0'].picture.large}" width="100px" alt="" class="img-fluid rounded-circle">
-            <p>Nombre: ${data.results['0'].name.last}</p>
+            <p>Correo: ${data.results['0'].email}</p>
               `
             })
         }
